@@ -1,0 +1,138 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 60%;
+    /*    overflow: auto;*/
+    background-image: url(../images/back.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.nav {
+    width: 100%;
+    overflow: auto;
+}
+
+.heading {
+    float: left;
+}
+
+.navbar {
+    float: right;
+    font-weight: 700;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+}
+
+.similar {
+    /*    height: 500px;*/
+    width: 25%;
+    float: left;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px 0px #9e979759;
+}
+
+
+/*this for mobile*/
+
+@media screen and (min-width:200px) {
+    .similar {
+        width: 100%;
+    }
+    .navbar {
+        height: 50px;
+        width: 50px;
+        background-image: url(../images/icon.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 3px;
+        right: 0px;
+    }
+    .heading {
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+    }
+    .nav {
+        background-color: #d4d6dc78;
+    }
+    li {
+        display: none;
+    }
+}
+
+
+/*this for tablet*/
+
+@media screen and (min-width:768px) {
+    .similar {
+        width: 50%;
+    }
+    .navbar {
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-image: none;
+        overflow: auto;
+        position: relative;
+    }
+    .heading {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    li {
+        display: inline-block;
+    }
+}
+
+
+/*this is for desktop*/
+
+@media screen and (min-width:992px) {
+    .similar {
+        width: 25%;
+    }
+    .navbar {
+        text-align: left;
+        float: right;
+        width: 50%;
+    }
+    .heading {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .container {
+        text-align: left;
+    }
+    .nav {
+        padding: 10px;
+    }
+}
